@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCENTIA FINE FRAGRANCES | Perfumes Árabes 100% Originales en Colombia</title>
+  <meta name="description" content="SCENTIA FINE FRAGRANCES: Porque en un mundo donde todo es réplica, yo elijo ser original. Perfumes árabes de lujo importados con Certificado Físico de Autenticidad y venta directa por WhatsApp en Colombia.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <aside class="top-bar" aria-label="Aviso de envíos">
+    <div class="container">
+      <div class="top-bar-left">
+        <span class="pulsing-dot" aria-hidden="true"></span>
+        <span><strong>🇨🇴 Envíos a Toda Colombia:</strong> Bogotá, Medellín, Cali, Barranquilla y más | <strong>Pago Contra Entrega</strong></span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#autenticidad" class="top-bar-link">🛡️ Certificado de Autenticidad</a>
+        <a href="#arbitraje" class="top-bar-link">💼 Modo Negocio (Chile -> Col)</a>
+        <a href="#faq" class="top-bar-link">Preguntas Frecuentes</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" title="SCENTIA FINE FRAGRANCES">
+        <div class="brand-logo-img-wrap">
+          <img src="assets/images/scentia-logo.jpg" alt="SCENTIA FINE FRAGRANCES Logo" class="scentia-header-logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">SCENTIA</span>
+          <span class="brand-slogan">FINE FRAGRANCES</span>
+        </div>
+      </a>
+
+      <!-- Search Input -->
+      <div class="nav-search">
+        <span class="search-icon-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </span>
+        <input type="text" id="search-input" placeholder="Buscar por perfume, nota o inspiración (ej: Asad, Sauvage, Vainilla)..." autocomplete="off">
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#autenticidad" class="nav-btn nav-btn-arbitrage" style="border-color: rgba(210,171,103,0.5);" title="Ver Garantía de Autenticidad">
+          <span>🛡️ Garantía</span>
+        </a>
+
+        <a href="#encargos-decants" class="nav-btn nav-btn-arbitrage" style="border-color: rgba(210,171,103,0.5); background: rgba(210,171,103,0.12);" title="Encargos y Decants 5ml">
+          <span>🧪 Decants & Encargos</span>
+        </a>
+
+        <a href="#arbitraje" class="nav-btn nav-btn-arbitrage" title="Calculadora de rentabilidad">
+          <span>💼 Ganancias</span>
+        </a>
+
+        <button class="nav-btn nav-btn-cart" id="open-cart-btn" onclick="openCartDrawer()" title="Ver carrito">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span>Pedido</span>
+          <span class="cart-count-badge" id="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <a href="https://api.whatsapp.com/send?phone=573127455474&text=%C2%A1Hola%20SCENTIA!%20Deseo%20informaci%C3%B3n%20sobre%20el%20cat%C3%A1logo%20de%20perfumes%20%C3%A1rabes" target="_blank" class="nav-btn nav-btn-whatsapp" title="Hablar por WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>👑 SCENTIA FINE FRAGRANCES</span>
+        </div>
+        <h1 class="hero-title">
+          PERFUMES ÁRABES <br>
+          <span class="font-gold-gradient">100% ORIGINALES</span> <br>
+          EN COLOMBIA
+        </h1>
+        <p class="motto-highlight" style="margin-bottom: 1.2rem; font-size: 1.15rem;">
+          "Porque en un mundo donde todo es réplica, yo elijo ser original."
+        </p>
+        <p class="hero-description">
+          Importados directamente sin intermediarios. Las fragancias árabes más virales y codiciadas para <strong>Hombre y Mujer</strong> con <strong>proyección bestial</strong> y duración de más de <strong>12 horas</strong>. Cada compra incluye tu <strong>Certificado Físico de Autenticidad</strong> con código de lote.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#catalogo" class="btn-primary-gold" onclick="setGenderFilter('mujer')" style="background: linear-gradient(135deg, #f472b6 0%, #fbcfe8 50%, #d2ab67 100%); color: #1a1a1a;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            Colección Mujer (Yara & Eclaire)
+          </a>
+
+          <a href="#catalogo" class="btn-primary-gold" onclick="setGenderFilter('hombre')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            Colección Hombre (Asad & Khamrah)
+          </a>
+
+          <a href="https://api.whatsapp.com/send?phone=573127455474&text=%C2%A1Hola%20SCENTIA!%20Quisiera%20asesor%C3%ADa%20personalizada%20para%20elegir%20mi%20perfume%20%C3%A1rabe" target="_blank" class="btn-whatsapp-outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Asesoría por WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-trust-list">
+          <div class="trust-item">
+            <span class="trust-item-icon">🛡️</span>
+            <span>Batch Code Verificable</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item-icon">🚚</span>
+            <span>Envíos Seguros a Todo Colombia</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item-icon">⭐</span>
+            <span>+500 Clientes Satisfechos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VALUE PROPOSITION STRIP
+       ========================================================================== -->
+  <section class="value-props-section">
+    <div class="container">
+      <div class="value-props-grid">
+        <div class="value-prop-card">
+          <div class="value-prop-icon">💎</div>
+          <div class="value-prop-content">
+            <h4>100% Originales</h4>
+            <p>Directo de fábrica Lattafa con sellos intactos y holograma.</p>
+          </div>
+        </div>
+        <div class="value-prop-card">
+          <div class="value-prop-icon">🚚</div>
+          <div class="value-prop-content">
+            <h4>Cobertura Nacional</h4>
+            <p>Despachos a ciudades principales y municipios en 24 a 48h.</p>
+          </div>
+        </div>
+        <div class="value-prop-card">
+          <div class="value-prop-icon">💵</div>
+          <div class="value-prop-content">
+            <h4>Pago Contra Entrega</h4>
+            <p>Paga en efectivo al recibir o por Nequi y Bancolombia.</p>
+          </div>
+        </div>
+        <div class="value-prop-card">
+          <div class="value-prop-icon">⏱️</div>
+          <div class="value-prop-content">
+            <h4>Fijación Extrema</h4>
+            <p>Fragancias concentradas EDP que duran entre 10 y 16 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AUTHENTICITY CERTIFICATE SECTION (SCENTIA)
+       ========================================================================== -->
+  <section class="authenticity-section" id="autenticidad">
+    <div class="container">
+      <div class="authenticity-grid">
+        <!-- Certificate Card Visual -->
+        <div class="certificate-card-showcase">
+          <img src="assets/images/certificado-autenticidad.jpg" alt="Certificado de Autenticidad SCENTIA 100% Original">
+        </div>
+
+        <!-- Details & Guarantee -->
+        <div class="authenticity-details">
+          <span class="section-tag">Garantía Inquebrantable</span>
+          <h3>CERTIFICADO DE AUTENTICIDAD EN CADA PEDIDO</h3>
+          <p class="motto-highlight">
+            "Porque en un mundo donde todo es réplica, yo elijo ser original."
+          </p>
+
+          <div class="authenticity-features-list">
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon">📜</div>
+              <div class="auth-feature-text">
+                <h5>Tarjeta Física de Garantía Incluida</h5>
+                <p>Cada frasco que enviamos a cualquier rincón de Colombia incluye su certificado personalizado con tu nombre, fecha y código de lote.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon">🔍</div>
+              <div class="auth-feature-text">
+                <h5>Batch Code Grabado y Verificable</h5>
+                <p>El código grabado en el fondo de la botella coincide exactamente con la caja y puedes verificarlo en portales como CheckFresh.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon">🛡️</div>
+              <div class="auth-feature-text">
+                <h5>100% Originales Traídos Directo</h5>
+                <p>Sin copias, sin réplicas ni tester rellenados. Celofán sellado de fábrica con los hologramas oficiales de Dubai.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#catalogo" class="btn-primary-gold">
+            Explorar Perfumes Originales
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRODUCT CATALOG SECTION
+       ========================================================================== -->
+  <main class="catalog-section" id="catalogo">
+    <div class="container">
+      <div class="catalog-header">
+        <span class="section-tag">Colección Exclusiva 100% Original</span>
+        <h2 class="section-title">LOS PERFUMES ÁRABES MÁS TOP</h2>
+        <p class="section-subtitle">
+          Selección de las fragancias virales más codiciadas para <strong>Hombre y Mujer</strong>. Elige tu favorito y recíbelo en Colombia con tu <strong>Certificado Físico de Autenticidad</strong>.
+        </p>
+      </div>
+
+      <!-- Filters & Sorting Bar -->
+      <div class="filter-bar">
+        <div class="filter-categories">
+          <button class="filter-pill active" data-filter="all">✨ Todos (83)</button>
+          <button class="filter-pill" data-filter="mujer" style="border-color: rgba(244,114,182,0.45); color: #fbcfe8;">👑 Perfumes Mujer (30)</button>
+          <button class="filter-pill" data-filter="hombre" style="border-color: rgba(210,171,103,0.45);">👔 Perfumes Hombre (53)</button>
+          <button class="filter-pill" data-filter="bestseller">🔥 Más Vendidos</button>
+          <button class="filter-pill" data-filter="gourmand">🍮 Gourmand / Dulces</button>
+          <button class="filter-pill" data-filter="frutales">🍓 Frutales & Tropicales</button>
+          <button class="filter-pill" data-filter="amaderados">🪵 Amaderados & Oud</button>
+          <button class="filter-pill" data-filter="frescos">🍋 Frescos & Versátiles</button>
+          <button class="filter-pill" data-filter="especiados">👔 Especiados & Cuero</button>
+        </div>
+
+        <div class="sort-select-wrap">
+          <label for="sort-select">Ordenar por:</label>
+          <select id="sort-select">
+            <option value="popular">Más Populares ⭐</option>
+            <option value="price-asc">Precio: Menor a Mayor</option>
+            <option value="price-desc">Precio: Mayor a Menor</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid (Filled dynamically by app.js) -->
+      <div class="products-grid" id="products-grid">
+        <!-- Javascript renders cards here -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       SPECIAL REQUESTS & 5ML DECANTS SECTION (Encargos & Decants)
+       ========================================================================== -->
+  <section class="custom-requests-section" id="encargos-decants">
+    <div class="container">
+      <div class="custom-requests-header">
+        <span class="section-tag">Atención Personalizada & Muestras Exclusivas</span>
+        <h2 class="section-title">¿NO ENCUENTRAS TU PERFUME O QUIERES PROBAR UN DECANT?</h2>
+        <p class="section-subtitle">
+          Te conseguimos cualquier perfume árabe directamente desde nuestros distribuidores autorizados en Chile y Dubai, o pide <strong>atomizadores decants de 5 ML</strong> para probar en tu piel antes de comprar el frasco grande.
+        </p>
+      </div>
+
+      <div class="custom-requests-wrapper">
+        <!-- Tabs Switcher -->
+        <div class="custom-tabs-nav">
+          <button class="custom-tab-btn active" id="tab-btn-encargo" onclick="switchCustomRequestTab('encargo')" type="button">
+            <span class="tab-icon">💎</span>
+            <div class="tab-btn-text">
+              <span class="tab-title">Encargar Perfume Especial</span>
+              <span class="tab-sub">No listado en el catálogo</span>
+            </div>
+            <span class="tab-badge">A PEDIDO</span>
+          </button>
+
+          <button class="custom-tab-btn" id="tab-btn-decants" onclick="switchCustomRequestTab('decants')" type="button">
+            <span class="tab-icon">🧪</span>
+            <div class="tab-btn-text">
+              <span class="tab-title">Pedir Decants de 5 ML</span>
+              <span class="tab-sub">Muestras para probar en piel</span>
+            </div>
+            <span class="tab-badge-gold">DESDE $25.000 COP</span>
+          </button>
+        </div>
+
+        <!-- TAB 1: ENCARGO DE PERFUME NO LISTADO -->
+        <div class="custom-tab-panel active" id="panel-encargo">
+          <div class="panel-intro-box">
+            <div class="panel-intro-icon">✈️</div>
+            <div class="panel-intro-text">
+              <h4>¿Buscas un perfume árabe que aún no ves en nuestra página?</h4>
+              <p>
+                Importamos directamente casas como <strong>Lattafa, Afnan, Armaf, Maison Alhambra, Al Haramain, Rasasi, Swiss Arabian</strong> y muchas más. Dinos cuál deseas y te responderemos directamente por WhatsApp con la cotización exacta puesta en tu ciudad de Colombia 🇨🇴.
+              </p>
+            </div>
+          </div>
+
+          <form onsubmit="submitCustomPerfumeRequest(event)" class="custom-request-form">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="custom-perfume-name">Nombre o Referencia del Perfume *</label>
+                <input type="text" id="custom-perfume-name" placeholder="Ej: Afnan 9 PM, Club de Nuit Intense, Amber Oud Gold..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="custom-perfume-brand">Casa / Marca (si la sabes)</label>
+                <input type="text" id="custom-perfume-brand" placeholder="Ej: Lattafa, Afnan, Armaf, Maison Alhambra...">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="custom-perfume-gender">Colección / Género</label>
+                <select id="custom-perfume-gender">
+                  <option value="Hombre">👔 Masculino / Caballero</option>
+                  <option value="Mujer">👑 Femenino / Dama</option>
+                  <option value="Unisex">✨ Unisex</option>
+                  <option value="No estoy seguro">❓ No estoy seguro (Asesórenme)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="custom-perfume-size">Presentación que te interesa</label>
+                <select id="custom-perfume-size">
+                  <option value="Frasco Completo 100 ML EDP">Frasco Completo (100 ML EDP / Sellado)</option>
+                  <option value="Frasco 50 ML / 80 ML">Frasco 50 ML a 80 ML</option>
+                  <option value="Cualquier tamaño disponible">Cualquier tamaño disponible</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-3">
+              <div class="form-group">
+                <label for="custom-customer-name">Tu Nombre y Apellido *</label>
+                <input type="text" id="custom-customer-name" placeholder="Tu nombre" required>
+              </div>
+
+              <div class="form-group">
+                <label for="custom-customer-city">Ciudad / Municipio en Colombia *</label>
+                <input type="text" id="custom-customer-city" placeholder="Ej: Bogotá, Medellín, Cali, Barranquilla..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="custom-customer-phone">Tu Celular / WhatsApp</label>
+                <input type="tel" id="custom-customer-phone" placeholder="Ej: 312 745 5474">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="custom-perfume-notes">Detalles adicionales (opcional)</label>
+              <textarea id="custom-perfume-notes" rows="2" placeholder="Ej: ¿Tienen tester disponible? O si no hay ese, ¿cuál me recomiendan con aroma similar?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-custom-request">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              COTIZAR MI PERFUME POR WHATSAPP 📲
+            </button>
+          </form>
+        </div>
+
+        <!-- TAB 2: SOLICITUD DE DECANTS DE 5 ML -->
+        <div class="custom-tab-panel" id="panel-decants">
+          <!-- Benefits of Decants -->
+          <div class="decant-features-grid">
+            <div class="decant-feature">
+              <span class="df-icon">🧪</span>
+              <div>
+                <h5>Atomizador de Vidrio 5 ML</h5>
+                <p>Equivale a <strong>75 a 80 atomizaciones</strong>. Ideal para usarlo a diario por 2 a 3 semanas.</p>
+              </div>
+            </div>
+
+            <div class="decant-feature">
+              <span class="df-icon">🛡️</span>
+              <div>
+                <h5>100% Puro y Original</h5>
+                <p>Extraído directamente de la botella oficial sellada con jeringa hermética sin adulterar ni mezclar.</p>
+              </div>
+            </div>
+
+            <div class="decant-feature">
+              <span class="df-icon">🎯</span>
+              <div>
+                <h5>Cero Compras a Ciegas</h5>
+                <p>Descubre la fijación, estela y cómo reacciona en tu pH antes de comprar la botella de 100 ml.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promo pricing cards -->
+          <div class="decant-pricing-row">
+            <div class="decant-price-card" onclick="selectDecantPack('1 Decant Individual (5ml) - $25.000 COP')">
+              <span class="dpc-tag">Prueba Única</span>
+              <div class="dpc-amount">$ 25.000</div>
+              <div class="dpc-unit">1 Decant de 5 ML</div>
+              <p class="dpc-desc">Para probar ese perfume viral específico que te llama la atención.</p>
+            </div>
+
+            <div class="decant-price-card featured" onclick="selectDecantPack('Pack Trío Descubrimiento (3 Decants de 5ml) - $65.000 COP')">
+              <span class="dpc-tag-gold">MÁS POPULAR ⭐</span>
+              <div class="dpc-amount">$ 65.000</div>
+              <div class="dpc-unit">Pack 3 Decants de 5 ML</div>
+              <p class="dpc-desc">Elige 3 perfumes a tu gusto. <strong>¡Ahorras $10.000 COP!</strong></p>
+            </div>
+
+            <div class="decant-price-card" onclick="selectDecantPack('Pack Colección VIP (5 Decants de 5ml) - $99.000 COP')">
+              <span class="dpc-tag">ENVÍO GRATIS 🚚</span>
+              <div class="dpc-amount">$ 99.000</div>
+              <div class="dpc-unit">Pack 5 Decants de 5 ML</div>
+              <p class="dpc-desc">5 fragancias surtidas + <strong>Envío Gratis</strong> a toda Colombia.</p>
+            </div>
+          </div>
+
+          <!-- Decants Form -->
+          <form onsubmit="submitDecantRequest(event)" class="custom-request-form">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="decant-pack-choice">Formato / Promoción de Decants *</label>
+                <select id="decant-pack-choice" onchange="updateDecantFormInputs()">
+                  <option value="1 Decant Individual (5ml) - $25.000 COP">1 Decant de 5 ML ($ 25.000 COP)</option>
+                  <option value="Pack Trío Descubrimiento (3 Decants de 5ml) - $65.000 COP" selected>Pack 3 Decants de 5 ML ($ 65.000 COP - Ahorras $10.000)</option>
+                  <option value="Pack Colección VIP (5 Decants de 5ml) - $99.000 COP">Pack 5 Decants de 5 ML ($ 99.000 COP - ¡Envío Gratis!)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="decant-perfume-select">Perfume Principal que deseas en Decant *</label>
+                <select id="decant-perfume-select" onchange="handleDecantSelectChange()">
+                  <!-- Dynamically populated by app.js -->
+                  <option value="custom">⭐ Quiero un perfume que NO está en la página...</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Dynamic field if custom perfume is chosen -->
+            <div class="form-group" id="decant-custom-name-wrap" style="display: none;">
+              <label for="decant-custom-name">Escribe el nombre del perfume que quieres en decant *</label>
+              <input type="text" id="decant-custom-name" placeholder="Ej: Afnan 9 PM, Club de Nuit, Amber Oud Gold...">
+            </div>
+
+            <!-- Field for Pack 3 or Pack 5 extra perfumes -->
+            <div class="form-group" id="decant-pack-notes-wrap">
+              <label for="decant-pack-perfumes-list">Si elegiste Pack de 3 o 5, escribe aquí las otras fragancias que deseas combinar:</label>
+              <input type="text" id="decant-pack-perfumes-list" placeholder="Ej: 1. Yara Rosa, 2. Khamrah Qahwa, 3. Eclaire (pueden ser de la página o de afuera)">
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="decant-customer-name">Tu Nombre y Apellido *</label>
+                <input type="text" id="decant-customer-name" placeholder="Tu nombre" required>
+              </div>
+
+              <div class="form-group">
+                <label for="decant-customer-city">Ciudad / Municipio de Entrega en Colombia *</label>
+                <input type="text" id="decant-customer-city" placeholder="Ej: Bogotá, Medellín, Cali, Barranquilla, Bucaramanga..." required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit-custom-request" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              PEDIR MIS DECANTS POR WHATSAPP 📲
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ARBITRAGE CALCULATOR SECTION (Chile 🇨🇱 ➡️ Colombia 🇨🇴)
+       ========================================================================== -->
+  <section class="arbitrage-section" id="arbitraje">
+    <div class="container">
+      <div class="arbitrage-container">
+        <div class="arbitrage-header">
+          <div class="arbitrage-title-wrap">
+            <span class="section-tag">Herramienta para Socios</span>
+            <h3>Calculadora de Arbitraje y Ganancias (Chile 🇨🇱 ➡️ Colombia 🇨🇴)</h3>
+            <p>
+              Simula en tiempo real tus costos de compra en Chile (CLP), flete internacional y tu ganancia neta en Pesos Colombianos (COP).
+            </p>
+          </div>
+        </div>
+
+        <!-- Inputs Form Grid -->
+        <div class="arbitrage-form-grid">
+          <div class="calc-input-group">
+            <label for="calc-select-perfume">Seleccionar Perfume</label>
+            <div class="calc-input-wrap">
+              <select id="calc-select-perfume">
+                <!-- Filled dynamically -->
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-input-group">
+            <label for="calc-cost-clp">Costo de Compra en Chile (CLP $)</label>
+            <div class="calc-input-wrap">
+              <input type="number" id="calc-cost-clp" value="22000" step="500">
+            </div>
+          </div>
+
+          <div class="calc-input-group">
+            <label for="calc-shipping-clp">Flete Chile ➡️ Col por Unidad (CLP $)</label>
+            <div class="calc-input-wrap">
+              <input type="number" id="calc-shipping-clp" value="4500" step="500">
+            </div>
+          </div>
+
+          <div class="calc-input-group">
+            <label for="calc-exchange-rate">Tasa de Cambio (1 CLP = X COP)</label>
+            <div class="calc-input-wrap">
+              <input type="number" id="calc-exchange-rate" value="4.15" step="0.05">
+            </div>
+          </div>
+
+          <div class="calc-input-group">
+            <label for="calc-sale-cop">Precio de Venta en Colombia (COP $)</label>
+            <div class="calc-input-wrap">
+              <input type="number" id="calc-sale-cop" value="195000" step="5000">
+            </div>
+          </div>
+
+          <div class="calc-input-group">
+            <label for="calc-units-quantity">Unidades en el Lote de Importación</label>
+            <div class="calc-input-wrap">
+              <input type="number" id="calc-units-quantity" value="10" min="1" max="500">
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculated Live Results -->
+        <div class="calc-results-box">
+          <div class="calc-result-item">
+            <span class="calc-result-label">Costo Total Puesto en Colombia</span>
+            <span class="calc-result-value" id="calc-res-cost-cop">$ 109.975 COP</span>
+          </div>
+
+          <div class="calc-result-item">
+            <span class="calc-result-label">Ganancia Neta por Frasco</span>
+            <span class="calc-result-value profit-cop" id="calc-res-profit-unit">$ 85.025 COP</span>
+          </div>
+
+          <div class="calc-result-item">
+            <span class="calc-result-label">Margen de Rentabilidad</span>
+            <span class="calc-result-value profit-margin" id="calc-res-margin">43.6%</span>
+          </div>
+
+          <div class="calc-result-item">
+            <span class="calc-result-label">Ganancia Total Lote <span id="calc-res-batch-units-label">(10 frascos)</span></span>
+            <span class="calc-result-value profit-cop" id="calc-res-batch-profit">$ 850.250 COP</span>
+          </div>
+        </div>
+
+        <!-- Store Configuration (Editable in LocalStorage) -->
+        <div class="store-settings-bar">
+          <div style="flex: 1; max-width: 500px;">
+            <p><strong>Configurar WhatsApp de Atención en Colombia:</strong></p>
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+              <input type="text" id="config-whatsapp-number" placeholder="Ej: 573127455474" style="background:#131318; border:1px solid rgba(210,171,103,0.3); color:#fff; padding:0.6rem 0.9rem; border-radius:6px; flex:1;">
+              <input type="text" id="config-store-name" placeholder="Nombre de tu Marca" style="background:#131318; border:1px solid rgba(210,171,103,0.3); color:#fff; padding:0.6rem 0.9rem; border-radius:6px; flex:1;">
+              <button class="btn-settings-save" id="save-store-settings-btn" type="button">Guardar</button>
+            </div>
+          </div>
+          <div style="font-size: 0.8rem; color: #888898; max-width: 320px;">
+            Al guardar, los botones de compra de toda la tienda enviarán los mensajes directamente al número de tu hermano en Colombia.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOW IT WORKS & SHIPPING IN COLOMBIA
+       ========================================================================== -->
+  <section style="padding: 4.5rem 0; background: #0a0a0d; border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-tag">Logística & Despacho</span>
+        <h2 class="section-title">¿CÓMO COMPRAR Y RECIBIR EN COLOMBIA?</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Proceso 100% transparente y directo, sin trámites bancarios complicados.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 2rem; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">1️⃣</div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;">Elige tu Perfume</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+            Explora nuestro catálogo, revisa las notas olfativas y a qué perfume famoso se parece.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 2rem; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">2️⃣</div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;">Pide por WhatsApp</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+            Haz clic en <strong>Pedir por WhatsApp</strong>. Se abrirá un chat con el perfume y tus datos listos para coordinar.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 2rem; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">3️⃣</div>
+          <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;">Recibe y Disfruta</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+            Despachamos por Servientrega o Envía. Recibes en la puerta de tu casa u oficina y pagas con total seguridad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ SECTION
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-tag">Resolvemos tus Dudas</span>
+        <h2 class="section-title">PREGUNTAS FRECUENTES</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Todo lo que necesitas saber sobre autenticidad, despachos y formas de pago.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item active">
+          <button class="faq-question" type="button">
+            <span>¿Los perfumes son 100% originales?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            Sí, garantizado al 100%. Todos nuestros perfumes vienen en sus cajas selladas con celofán de fábrica, holograma oficial de Lattafa Perfumes Dubai y código de lote (Batch Code) grabado que puedes verificar en sitios especializados como CheckFresh.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>¿Cuánto demora el envío dentro de Colombia?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            A ciudades principales como Bogotá, Medellín, Cali y Barranquilla el tiempo de entrega es de <strong>24 a 48 horas hábiles</strong>. A ciudades intermedias y municipios toma de 2 a 4 días a través de transportadoras aliadas (Envía, Inter Rapidísimo o Servientrega).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>¿Cuáles son los métodos de pago?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            Ofrecemos: <strong>Pago Contra Entrega</strong> (pagas en efectivo al transportador al recibir tu paquete en las principales ciudades), Transferencia directa a <strong>Bancolombia, Nequi y Daviplata</strong>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>¿Por qué los perfumes árabes son tan potentes y duraderos?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            La perfumería del Medio Oriente utiliza una altísima concentración de aceites esenciales puros (Eau de Parfum y Extrait de Parfum), complementados con notas fijadoras nobles como el Oud, Ámbar gris, Almizcle y Vainilla, logrando una fijación garantizada de 10 a 16 horas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>¿Cómo sé cuál perfume es el adecuado para mí?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            ¡Escríbenos por WhatsApp! Cuéntanos qué aromas te gustan (dulces, cítricos, maderas, frescos) o para qué ocasión lo buscas (citas, oficina, noche, fiesta) y con gusto te asesoramos de forma personalizada.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="assets/images/scentia-logo.jpg" alt="SCENTIA FINE FRAGRANCES" style="height: 44px; border-radius: 6px; border: 1px solid var(--border-gold);">
+            <div>
+              <span style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 800; color: #fff; display: block; line-height: 1;">SCENTIA</span>
+              <span style="font-size: 0.68rem; letter-spacing: 0.15em; color: var(--gold-primary); text-transform: uppercase;">FINE FRAGRANCES</span>
+            </div>
+          </div>
+          <p style="font-style: italic; font-size: 0.85rem; color: var(--gold-light); margin-bottom: 0.8rem;">
+            "Porque en un mundo donde todo es réplica, yo elijo ser original."
+          </p>
+          <p style="font-size: 0.84rem; color: #9a9ab0; line-height: 1.5; margin-bottom: 1.25rem;">
+            Especialistas en importación y distribución directa de las mejores casas emiratíes (Lattafa, Afnan, Armaf, Maison Alhambra). Conectando Chile y Colombia con los mejores precios del mercado y Certificado Físico de Autenticidad en cada frasco.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Colección Mujer</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo" onclick="setGenderFilter('mujer')">Lattafa Yara Rosa</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('mujer')">Lattafa Eclaire EDP</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('mujer')">Amber Oud Gold Edition</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('mujer')">Lattafa Yara Tous</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('mujer')">Lattafa Nebras</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Colección Hombre</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo" onclick="setGenderFilter('hombre')">Afnan 9 PM (Viral)</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('hombre')">Armaf Club de Nuit Intense</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('hombre')">Lattafa Asad EDP</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('hombre')">Lattafa Khamrah & Qahwa</a></li>
+            <li><a href="#catalogo" onclick="setGenderFilter('hombre')">Maison Alhambra Kismet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Enlaces Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo">Catálogo Completo</a></li>
+            <li><a href="#encargos-decants">Encargos & Decants 5ml</a></li>
+            <li><a href="#autenticidad">Certificado de Autenticidad</a></li>
+            <li><a href="#arbitraje">Calculadora de Ganancias</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="javascript:void(0)" onclick="openCartDrawer()">Ver Mi Carrito</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto WhatsApp</h4>
+          <p style="font-size: 0.85rem; color: #9a9ab0; margin-bottom: 1rem;">
+            Atención personalizada de lunes a domingo. Despachos rápidos en Colombia:
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=573127455474&text=%C2%A1Hola%20SCENTIA!%20Deseo%20hacer%20un%20pedido" target="_blank" class="btn-whatsapp-buy" style="display: inline-flex;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span class="dynamic-whatsapp-display">+57 312 745 5474</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>SCENTIA FINE FRAGRANCES</strong>. Todos los derechos reservados. Perfumes Importados 100% Originales.</p>
+        <p>Porque en un mundo donde todo es réplica, yo elijo ser original. | Despachos en Colombia 🇨🇴</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DE DETALLE DEL PRODUCTO (Quick View)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="product-modal-backdrop" onclick="if(event.target===this)closeProductModal()">
+    <div class="modal-container">
+      <button class="modal-close-btn" type="button" onclick="closeProductModal()" aria-label="Cerrar modal">&times;</button>
+      <div id="modal-dynamic-content">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CART SLIDE-OVER DRAWER (Carrito & Checkout a WhatsApp)
+       ========================================================================== -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop" onclick="if(event.target===this)closeCartDrawer()">
+    <div class="cart-drawer" onclick="event.stopPropagation()">
+      <div class="cart-header">
+        <h3>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          Tu Pedido
+        </h3>
+        <button class="modal-close-btn" style="position: static; width: 32px; height: 32px;" onclick="closeCartDrawer()">&times;</button>
+      </div>
+
+      <!-- Items Container -->
+      <div class="cart-items-container" id="cart-items-container">
+        <div class="cart-empty-state" id="cart-empty-state">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <h4>Tu bolsa de pedido está vacía</h4>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem;">Agrega perfumes desde el catálogo para enviar tu orden por WhatsApp.</p>
+        </div>
+
+        <div id="cart-items-list">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+
+      <!-- Checkout & WhatsApp Form -->
+      <div class="cart-checkout-form" id="cart-checkout-section" style="display: none;">
+        <!-- Free Shipping Tracker -->
+        <div class="free-shipping-progress">
+          <div id="shipping-status-msg" style="font-size: 0.82rem;"></div>
+          <div class="shipping-bar-track">
+            <div class="shipping-bar-fill" id="shipping-bar-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="cart-totals-summary">
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span id="cart-subtotal-val">$ 0 COP</span>
+          </div>
+          <div class="summary-row">
+            <span>Envío a Colombia:</span>
+            <span id="cart-shipping-val">$ 15.000 COP</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total a Pagar:</span>
+            <span id="cart-total-val" style="color: var(--gold-light);">$ 0 COP</span>
+          </div>
+        </div>
+
+        <!-- Customer Form Fields -->
+        <form onsubmit="submitCartOrderViaWhatsApp(event)" class="checkout-fields">
+          <input type="text" id="checkout-customer-name" placeholder="Tu Nombre y Apellido *" required>
+          <input type="tel" id="checkout-customer-phone" placeholder="Tu Número de Celular / WhatsApp *" required>
+          <input type="text" id="checkout-customer-city" placeholder="Ciudad / Municipio de Entrega (ej: Bogotá, Medellín, Cali) *" required>
+          <input type="text" id="checkout-customer-address" placeholder="Dirección completa y Barrio *" required>
+          
+          <select id="checkout-payment-method">
+            <option value="Pago Contra Entrega">📦 Pago Contra Entrega (Pagar al recibir)</option>
+            <option value="Transferencia Nequi / Bancolombia">📱 Transferencia Nequi / Bancolombia</option>
+            <option value="Daviplata">📱 Daviplata</option>
+          </select>
+
+          <input type="text" id="checkout-order-notes" placeholder="Indicaciones para el mensajero (opcional)">
+
+          <button type="submit" class="btn-complete-whatsapp-order">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            ENVIAR PEDIDO POR WHATSAPP 📲
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON
+       ========================================================================== -->
+  <a href="https://api.whatsapp.com/send?phone=573127455474&text=%C2%A1Hola!%20Deseo%20hacer%20una%20consulta%20sobre%20los%20perfumes%20%C3%A1rabes" target="_blank" class="floating-whatsapp-btn" aria-label="Abrir WhatsApp">
+    <span class="whatsapp-tooltip">💬 ¿Dudas? Escríbenos por WhatsApp</span>
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="data/products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
